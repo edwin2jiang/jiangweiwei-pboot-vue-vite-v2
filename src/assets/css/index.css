@@ -1,0 +1,163 @@
+/* 引入编写的样式 */
+@import "./animation.css";
+@import "./auto.css";
+@import "./common.css";
+@import "./reset.css";
+
+#app {
+  width: 100vw;
+  max-width: 100%;
+  color: #6c757d;
+  overflow: hidden;
+}
+
+/* .backTop {
+  display: none;
+} */
+
+.w-1200 {
+  width: 1200px;
+}
+
+.w-100p {
+  width: 100% !important;
+  max-width: 100%;
+}
+
+.m-center {
+  margin: 0 auto;
+}
+
+.nav-links {
+  width: 600px;
+  line-height: 50px;
+  height: 50px;
+}
+
+.nav-link {
+  color: #bbbcbc;
+}
+
+.nav-link:hover {
+  color: #8a8b8b;
+}
+
+.nav-link.active {
+  color: #8a8b8b;
+}
+
+.main {
+  width: 100%;
+}
+
+.header-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1100;
+  background-color: #f8f9fa;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.head-text {
+  font-size: 2.142rem;
+  color: #17abd1;
+}
+
+.des-text {
+  margin-top: 4px;
+  margin-bottom: 20px;
+}
+
+.des {
+  border-bottom: 3px double #ccc;
+  padding-bottom: 2px;
+}
+
+.sys-description {
+  text-indent: 2em;
+  line-height: 1.8em;
+}
+
+.part:nth-child(2n) {
+  background-color: white;
+}
+
+.part:nth-child(2n + 1) {
+  background-color: #f8f9fa;
+}
+
+.detail-part .item {
+  width: 300px;
+  margin: 30px 0;
+}
+
+.communicate-tech .box {
+  width: 580px;
+  height: 400px;
+}
+
+.article {
+  padding: 8px 0;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.my-hr {
+  border-bottom: 1px solid #dee2e6;
+}
+
+footer a,
+footer div {
+  color: #6c757d !important;
+  font-size: 14px;
+}
+
+.top::before {
+  content: "\f077";
+}
+
+.backTop {
+  text-align: center;
+  width: 50px;
+  font-size: 14px;
+  padding: 7px 6px;
+  background-color: #27a8e1;
+  position: fixed;
+  bottom: 150px;
+  color: white;
+  right: 14px;
+  z-index: 998;
+  cursor: pointer;
+}
+
+
+#system-character .text {
+  margin-top: 8px;
+  color: black;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+#system-character .des-detail {
+  font-size: 12px;
+  line-height: 1.4em;
+}
+
+.head-text {
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+.communicate-tech .box {
+  width: 550px;
+  margin-right: 40px;
+}
+
+/* nav a {
+  text-shadow: 0 0.8em 8px rgba(0, 0, 0, 0.3);
+}
+
+.head-text {
+  text-shadow: 6px 8px 8px #17abd1;
+} */

@@ -1,0 +1,314 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.block {
+  display: block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-left {
+  text-align: left;
+}
+
+/* flex布局相关 */
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-start {
+  justify-content: start;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
+}
+
+/* flex布局结束 */
+
+.top6 {
+  margin-top: 6px;
+}
+
+.bottom6 {
+  margin-bottom: 6px;
+}
+
+.margin-vertical-6 {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.margin-vertical-10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.block {
+  display: block;
+}
+
+h3 {
+  margin-bottom: 2px;
+}
+
+.part {
+  margin-bottom: 30px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.blod-hr {
+  width: 100%;
+  margin: 10px 0;
+  border-bottom: 1px solid #666666;
+}
+
+.big {
+  font-size: 20px;
+  font-weight: 700;
+  color: #737373;
+}
+
+.text-red {
+  color: #dc3545;
+}
+
+/* padding一族 */
+.p-0 {
+  padding: 0;
+}
+
+.p-1 {
+  padding: 0.25rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.p-7 {
+  padding: 1.75rem;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.p-9 {
+  padding: 2.25rem;
+}
+
+.p-10 {
+  padding: 2.5rem;
+}
+
+.p-tb-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.p-tb-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+/* padding结束 */
+
+/* margin开始*/
+.m-c {
+  margin: 0 auto;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.m-1 {
+  margin: 0.25rem;
+}
+
+.m-2 {
+  margin: 0.5rem;
+}
+
+.m-3 {
+  margin: 0.75rem;
+}
+
+.m-4 {
+  margin: 1rem;
+}
+
+.m-5 {
+  margin: 1.25rem;
+}
+
+.m-6 {
+  margin: 1.5rem;
+}
+
+.m-7 {
+  margin: 1.75rem;
+}
+
+.m-8 {
+  margin: 2rem;
+}
+
+.m-9 {
+  margin: 2.25rem;
+}
+
+.m-10 {
+  margin: 2.5rem;
+}
+/* margin结束 */
+
+/* 动画相关 */
+.fadeInUp {
+  animation: fadeInUp;
+  animation-duration: 1s;
+}
+
+.fadeInDown {
+  animation: fadeInDown;
+  animation-duration: 1s;
+}
+
+.fadeInLeft {
+  animation: fadeInLeft;
+  animation-duration: 1s;
+}
+
+.fadeInRight {
+  animation: fadeInRight;
+  animation-duration: 1s;
+}
+
+/* 动画延迟 原子类 */
+.animation-delay-100 {
+  animation-delay: 100ms;
+}
+
+.animation-delay-200 {
+  animation-delay: 200ms;
+}
+
+.animation-delay-300 {
+  animation-delay: 300ms;
+}
+.animation-delay-400 {
+  animation-delay: 400ms;
+}
+.animation-delay-500 {
+  animation-delay: 500ms;
+}
+.animation-delay-600 {
+  animation-delay: 600ms;
+}
+.animation-delay-700 {
+  animation-delay: 700ms;
+}
+.animation-delay-800 {
+  animation-delay: 800ms;
+}
+.animation-delay-900 {
+  animation-delay: 900ms;
+}
+
+.animation-delay-1000 {
+  animation-delay: 1000ms;
+}
+
+.animation-delay-1100 {
+  animation-delay: 1100ms;
+}
+
+.animation-delay-1200 {
+  animation-delay: 1200ms;
+}
+
+.animation-delay-1300 {
+  animation-delay: 1300ms;
+}
+.animation-delay-1400 {
+  animation-delay: 1400ms;
+}
+.animation-delay-1500 {
+  animation-delay: 1500ms;
+}
+.animation-delay-1600 {
+  animation-delay: 1600ms;
+}
+.animation-delay-1700 {
+  animation-delay: 1700ms;
+}
+.animation-delay-1800 {
+  animation-delay: 1800ms;
+}
+.animation-delay-1900 {
+  animation-delay: 1900ms;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2000ms;
+}
+
+/* 动画延迟 原子类 结束 */
+
+.hidden {
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
+}

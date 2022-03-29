@@ -59,7 +59,7 @@ const links = [
 <template>
     <header id="header" class="header-bar m-center w-100p flex justify-center p-4">
         <div class="w-1200 flex justify-between">
-            <img src="logo.png" alt="logo" />
+            <img src="/logo.png" alt="logo" />
 
             <nav class="nav-links flex justify-around">
                 <a

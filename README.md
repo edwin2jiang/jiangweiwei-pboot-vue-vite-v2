@@ -2,16 +2,17 @@
 
 仿站PbootCMS https://www.pbootcms
 
-## 1. 项目运行步骤
+
+## 方式1. 本地运行 - 项目运行步骤
 ```sh
-npm i -g yarn # 如果没有安装过yarn
+npm i -g yarn # 安装yarn
 
 yarn
 
 yarn dev
 ```
 
-## 2. 直接访问
+## 方式2. 直接访问
 
 我已将该服务部署在,https://pboot.netlify.app/.
 

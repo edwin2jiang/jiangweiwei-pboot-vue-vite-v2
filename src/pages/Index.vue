@@ -171,9 +171,6 @@ onMounted(() => {
 <style scoped lang="scss">
 @import "@/assets/css/index.css";
 
-
-
-
 .box {
     width: 100%; 
     height: 480px;

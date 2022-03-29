@@ -53,6 +53,7 @@ const links = [
         text: '更新日志',
         isActive: false
     }]
+
 </script>
 
 
@@ -62,12 +63,12 @@ const links = [
             <img src="/logo.png" alt="logo" />
 
             <nav class="nav-links flex justify-around">
-                <a
-                    :href="activeIndex != 0 ? '../../' + item.href : item.href"
+                <router-link
+                    :to="item.href"
                     :class="{ 'nav-link': true, active: index == activeIndex }"
                     v-for="(item, index) in links"
                     :key="index"
-                >{{ item.text }}</a>
+                >{{ item.text }}</router-link>
             </nav>
         </div>
     </header>

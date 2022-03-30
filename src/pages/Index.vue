@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, onMounted } from "vue"
+import { ref, onMounted, onBeforeUnmount } from "vue"
 
 const width = 1918
     , systemCharacterArr = [{ pic: './images/banner/banner0.png', text: '便捷的模板标签', detail: '采用高效、简洁的模板标签，只要懂HTML即可快速开发网站', }, { pic: './images/banner/banner1.png', text: '自主研发的内核框架', detail: '系统采用自主研发的高速多层框架及缓存技术，代码整齐规范，便于二次开发', }, { pic: './images/banner/banner2.png', text: '便捷的数据库类型', detail: '系统默认采用Sqlite轻型数据库，放入空间即可直接使用，同时支持MySQL等数据库', }, { pic: './images/banner/banner3.png', text: '响应式管理后台', detail: '采用基于LayUI的响应式管理后台，满足各类设备随时管理的需要', }, { pic: './images/banner/banner4.png', text: '小程序、APP等程序对接', detail: '系统提供大量HTTP接口，支持小程序、APP、Ajax等方式数据调用', }, { pic: './images/banner/banner5.png', text: '自定义内容模型及字段', detail: '支持自定义内容模型及字段，实现自主增添不同模型的内容字段', }, { pic: './images/banner/banner6.png', text: '多语言区域建站', detail: '系统支持多语言多区域建站并支持绑定域名，支持配置不同模板、基础信息及内容', }, { pic: './images/banner/banner7.png', text: '不限量自定义表单', detail: '系统支持不限量自定义表单、自定义留言板，满足各类数据提交的需要', }, { pic: './images/banner/banner8.png', text: '多条件筛选及搜索', detail: '系统支持多条件筛选及搜索功能，并且使用方式极其简单', }, { pic: './images/banner/banner9.png', text: '伪静态及前端动态缓存', detail: '支持全站伪静态及前端动态缓存，自主配置缓存时间，方便快捷', }, { pic: './images/banner/banner10.png', text: '后台在线升级', detail: '系统支持后台跨版本在线升级，无需单独操作数据库及FTP，免去升级烦恼', }, { pic: './images/banner/banner11.png', text: '独立手机版或自适应', detail: '支持独立手机版建站或自适应手机版建站，满足个性化需要', }, { pic: './images/banner/banner12.png', text: '支持自定义URL', detail: '通过配置系统地址路由及自定义文件名，可以满足各类个性化SEO的需要', }, { pic: './images/banner/banner13.png', text: '支持首页分页', detail: '系统支持首页分页功能，满足建立博客等类型系统的需要', }, { pic: './images/banner/banner14.png', text: '留言发送到邮箱', detail: '系统支持留言信息发送到多个邮箱的，有留言第一时间知晓', }, { pic: './images/banner/banner15.png', text: '支持N组幻灯片', detail: '系统支持N组幻灯片，配合栏目大图可以满足各类应用场景调用的需要', }, { pic: './images/banner/banner16.png', text: '自定义标签', detail: '系统支持自定义内容标签，可将一些模板内容后台化，方便后期修改', }, { pic: './images/banner/banner17.png', text: '支持会员功能', detail: '系统支持会员注册登陆、文章评论、权限浏览等', }, { pic: './images/banner/banner18.png', text: '支持在线商城', detail: '系统支持商品下单购买及支付、满足小商城建设的需要（暂未开发）', }, { pic: './images/banner/banner19.png', text: '支持公众号管理', detail: '系统支持公众号内容、菜单、粉丝等管理的功能（暂未开发）', },]
@@ -21,6 +21,7 @@ function clickPoint(index) {
     startTimer()
 }
 function startTimer() {
+    clearInterval(timer)
     timer = setInterval(() => {
         if (slideActiveIndex.value === 0) {
             clickPoint(1)
@@ -37,6 +38,10 @@ onMounted(() => {
     clearTimer()
     startTimer()
 })
+
+onBeforeUnmount(() => {
+    clearTimer()
+}) 
 </script>
 
 <template>
@@ -162,9 +167,6 @@ onMounted(() => {
         <!-- /技术交流 -->
     </main>
     <!-- /主界面 -->
-
-
-   
 </template>
 
 
@@ -172,7 +174,7 @@ onMounted(() => {
 @import "@/assets/css/index.css";
 
 .box {
-    width: 100%; 
+    width: 100%;
     height: 480px;
     overflow: hidden;
     position: relative;

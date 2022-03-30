@@ -2,13 +2,14 @@
 import MyHeader from './components/MyHeader.vue';
 import MyFooter from './components/MyFooter.vue';
 import BackTop from './components/BackTop.vue';
+import OccupyPlace from './components/OccupyPlace.vue';
 
 </script>
 
 <template>
   <MyHeader></MyHeader>
   <!-- 占位导航栏（占位元素不显示） -->
-  <div style="height: 82px;"></div>
+  <OccupyPlace height="82px"></OccupyPlace>
   <router-view></router-view>
   <MyFooter></MyFooter>
   <BackTop/>
